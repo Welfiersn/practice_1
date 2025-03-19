@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace pr1
 {
-    public class FileManager
+    public static class FileManager
     {
         private static List<FileDescription> files = new List<FileDescription>();
-
-        private FileManager() { }
 
         public static void ShowInterface()
         {
@@ -257,7 +255,7 @@ namespace pr1
             Console.Write("равая");
             Console.Write(new string(' ', 29));
 
-            Console.SetCursorPosition(75, 0);
+            Console.SetCursorPosition(74, 0);
             Console.BackgroundColor = ConsoleColor.Cyan;
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             DateTime date = DateTime.Now;
